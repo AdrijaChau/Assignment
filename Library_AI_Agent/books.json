@@ -1,0 +1,37 @@
+[
+  {
+    "id": 101,
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "category": "Programming",
+    "available_copies": 1
+  },
+  {
+    "id": 102,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Software Engineering",
+    "available_copies": 1
+  },
+  {
+    "id": 103,
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "category": "Database & Systems",
+    "available_copies": 0
+  },
+  {
+    "id": 104,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "category": "Software Engineering",
+    "available_copies": 2
+  },
+  {
+    "id": 105,
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "category": "Artificial Intelligence",
+    "available_copies": 4
+  }
+]

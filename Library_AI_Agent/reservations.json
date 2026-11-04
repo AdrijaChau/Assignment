@@ -1,0 +1,16 @@
+[
+  {
+    "reservation_id": 1,
+    "book_id": 101,
+    "book_title": "Python Crash Course",
+    "customer_name": "Alice Vance",
+    "status": "Confirmed"
+  },
+  {
+    "reservation_id": 2,
+    "book_id": 101,
+    "book_title": "Python Crash Course",
+    "customer_name": "Alice Vance",
+    "status": "Confirmed"
+  }
+]
