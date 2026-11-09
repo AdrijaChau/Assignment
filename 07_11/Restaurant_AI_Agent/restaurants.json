@@ -1,0 +1,42 @@
+[
+  {
+    "id": "R101",
+    "name": "Spice Garden",
+    "cuisine": "Indian",
+    "location": "Hyderabad",
+    "price_per_person": 800,
+    "available_seats": 20
+  },
+  {
+    "id": "R102",
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "location": "Bangalore",
+    "price_per_person": 650,
+    "available_seats": 15
+  },
+  {
+    "id": "R103",
+    "name": "Little Italy",
+    "cuisine": "Italian",
+    "location": "Mumbai",
+    "price_per_person": 1200,
+    "available_seats": 10
+  },
+  {
+    "id": "R104",
+    "name": "Taco Fiesta",
+    "cuisine": "Mexican",
+    "location": "Pune",
+    "price_per_person": 550,
+    "available_seats": 25
+  },
+  {
+    "id": "R105",
+    "name": "Royal Biryani House",
+    "cuisine": "Indian",
+    "location": "Hyderabad",
+    "price_per_person": 500,
+    "available_seats": 30
+  }
+]
