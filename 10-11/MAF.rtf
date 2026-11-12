@@ -1,0 +1,762 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Aptos;}{\f1\fswiss\fprq2\fcharset0 Segoe UI;}{\f2\froman\fprq2\fcharset0 Times New Roman;}{\f3\fnil\fcharset1 Cambria Math;}{\f4\fmodern\fprq1\fcharset128 MS Gothic;}{\f5\fnil\fcharset1 Segoe UI Symbol;}{\f6\fnil\fcharset0 Calibri;}{\f7\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green255\blue255;\red230\green230\blue230;\red245\green245\blue245;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont3\mwrapIndent1440 }\viewkind4\uc1 
+\pard\widctlpar\sa160\sl276\slmult1\qc\kerning2\ul\b\f0\fs24\lang16393 Microsoft Agent Framework and Microsoft Foundry Agent Framework\par
+
+\pard\widctlpar\sa160\sl276\slmult1\ulnone\b0\par
+\b Microsoft Agent Framework (MAF)\par
+\b0 Microsoft Agent Framework (MAF) is an open-source framework from \b Microsoft\b0  for building, orchestrating, deploying, and managing \b AI agents\b0  and \b multi-agent systems\b0  in enterprise applications. It enables developers to create intelligent agents that can reason, use tools, access enterprise data, collaborate with other agents, and execute complex workflows.\par
+The framework supports multiple programming languages, including \b Python\b0 , \b .NET\b0 , and \b Go (Preview)\b0 , and integrates with popular AI models such as \b Azure OpenAI\b0 , \b OpenAI\b0 , \b Anthropic Claude\b0 , \b Microsoft Foundry\b0 , and others.\par
+\b Architecture Overview\par
+\b0 The first image below illustrates the complete Microsoft Agent Framework architecture:\par
+\b Core Components\par
+1. Agents\par
+\b0 Agents are intelligent software entities powered by LLMs that can:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Understand user requests\par
+{\pntext\f7\'B7\tab}Reason about tasks\par
+{\pntext\f7\'B7\tab}Access tools and APIs\par
+{\pntext\f7\'B7\tab}Retrieve enterprise data\par
+{\pntext\f7\'B7\tab}Generate responses\par
+{\pntext\f7\'B7\tab}Take actions autonomously\par
+
+\pard\widctlpar\sa160\sl276\slmult1 Examples:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Customer Support Agent\par
+{\pntext\f7\'B7\tab}Expense Management Agent\par
+{\pntext\f7\'B7\tab}HR Assistant Agent\par
+{\pntext\f7\'B7\tab}IT Helpdesk Agent\par
+
+\pard\widctlpar\li360\sb100\sa100\sl300\slmult0\kerning0\b\f1\fs27 2. Agent Orchestration Layer\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sb100\sa100\sl300\slmult0\b0\fs24 This is the brain of the framework.\par
+{\pntext\f7\'B7\tab}It manages:\par
+\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0\b Capability\cell Purpose\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0\b0 Planning\cell Breaks large tasks into smaller tasks\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Reasoning\cell Determines the best decision\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Tool Execution\cell Calls APIs and external tools\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Routing\cell Sends tasks to correct agents\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 State Management\cell Maintains agent memory\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Context Management\cell Stores conversation context\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Human Approval\cell Requests approvals when needed\cell\row\trowd\trgaph15\trleft8\trqc\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2847\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx6974 
+\pard\intbl\widctlpar\li720\sb100\sa100\sl300\slmult0 Observability\cell Tracks agent performance\cell\row 
+\pard\widctlpar\li720\sa160\sl276\slmult1\b\par
+3. Memory and Context\par
+\b0 Traditional chatbots forget previous interactions.\par
+MAF provides:\par
+\par
+\b Short-Term Memory\par
+\b0 Maintains current conversation state.\par
+Example:\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1 User: Generate sales report for Q1.\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 The agent remembers that Q1 means January-March during the interaction.\par
+\par
+\b Long-Term Memory\par
+\b0 Retains historical information.\par
+Example:\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1 User prefers Excel reports.\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Future reports will automatically use Excel.\par
+\par
+\b Vector Memory\par
+\b0 Stores embeddings for:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Semantic search\par
+{\pntext\f7\'B7\tab}RAG systems\par
+{\pntext\f7\'B7\tab}Knowledge retrieval\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b 4. MCP (Model Context Protocol)\par
+\b0 MCP acts as a standard communication protocol for agents to interact with external systems.\par
+Think of MCP as:\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1 "USB-C for AI Agents"\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 It enables connection to:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Databases\par
+{\pntext\f7\'B7\tab}Files\par
+{\pntext\f7\'B7\tab}APIs\par
+{\pntext\f7\'B7\tab}Documentation repositories\par
+{\pntext\f7\'B7\tab}Business applications\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Benefits:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Standardized integrations\par
+{\pntext\f7\'B7\tab}Reusable tools\par
+{\pntext\f7\'B7\tab}Better interoperability\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b 5. Workflows\par
+\b0 Microsoft Agent Framework supports workflow orchestration.\par
+\b Functional Workflows\par
+\b0 Linear execution:\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1\qc Plain Text\par
+Receive Request\par
+\f3\u8595?\f1\lang16393\par
+Validate\par
+\f3\u8595?\f1\lang16393\par
+Process\par
+\f3\u8595?\f1\lang16393\par
+Generate Output\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b Graph-Based Workflows\par
+\b0 More complex branching structures:\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1\qc Plain Text\par
+Receive Request\par
+\f3\u8595?\f1\lang16393\par
+Agent\par
+/ \\\par
+Research Analysis\par
+\\ /\par
+Report\par
+
+\pard\widctlpar\li720\sb100\sa100\sl276\slmult1\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b Multi-Agent Systems\par
+\b0 One of MAF's strongest features is multi-agent collaboration.\par
+The second image demonstrates the multi-agent workflow:\par
+\par
+\b Example Team\par
+\par
+Orchestrator Agent\par
+\b0 Acts as team manager.\par
+Responsibilities:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Assign tasks\par
+{\pntext\f7\'B7\tab}Monitor progress\par
+{\pntext\f7\'B7\tab}Coordinate communication\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\par
+\b Research Agent\par
+\b0 Collects information from:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Databases\par
+{\pntext\f7\'B7\tab}Documents\par
+{\pntext\f7\'B7\tab}Internet sources\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b Analyst Agent\par
+\b0 Processes:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Business data\par
+{\pntext\f7\'B7\tab}Reports\par
+{\pntext\f7\'B7\tab}Metrics\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\b Executor Agent\par
+Performs actions:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 API calls\par
+{\pntext\f7\'B7\tab}Database updates\par
+{\pntext\f7\'B7\tab}Ticket creation\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Communicator Agent\par
+\b\par
+Creates:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Reports\par
+{\pntext\f7\'B7\tab}Emails\par
+{\pntext\f7\'B7\tab}Notifications\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b Perceive \f3\u8594?\f1\lang16393  Reason \f3\u8594?\f1\lang16393  Act \f3\u8594?\f1\lang16393  Learn Cycle\par
+\b0 This is the fundamental Agentic AI loop.\par
+\b 1. Perceive\par
+\b0 Agent gathers information.\par
+Sources:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 User prompt\par
+{\pntext\f7\'B7\tab}Files\par
+{\pntext\f7\'B7\tab}APIs\par
+{\pntext\f7\'B7\tab}Databases\par
+{\pntext\f7\'B7\tab}Sensors\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b 2. Reason\par
+\b0 Agent decides:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Is the expense valid?\par
+{\pntext\f7\'B7\tab}Does it exceed policy?\par
+{\pntext\f7\'B7\tab}Needs approval?\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b 3. Act\par
+\b0 Agent performs an action.\par
+Examples:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Create approval request\par
+{\pntext\f7\'B7\tab}Send email\par
+{\pntext\f7\'B7\tab}Update database\par
+{\pntext\f7\'B7\tab}Trigger workflow\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b 4. Learn\par
+\b0 Agent improves through:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Feedback\par
+{\pntext\f7\'B7\tab}Historical data\par
+{\pntext\f7\'B7\tab}Evaluation metrics\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b Key Enterprise Features\par
+Human-in-the-Loop\par
+\b0 Critical decisions can require approval.\par
+Agent pauses until approval.\par
+\par
+\b Security & Governance\par
+\b0 Includes:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Access control\par
+{\pntext\f7\'B7\tab}Responsible AI\par
+{\pntext\f7\'B7\tab}Monitoring\par
+{\pntext\f7\'B7\tab}Content filtering\par
+{\pntext\f7\'B7\tab}Compliance controls\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Enterprise organizations can enforce governance rules before actions occur.\par
+\par
+\b Observability\par
+\b0 Tracks:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Agent decisions\par
+{\pntext\f7\'B7\tab}Tool usage\par
+{\pntext\f7\'B7\tab}Response quality\par
+{\pntext\f7\'B7\tab}Cost\par
+{\pntext\f7\'B7\tab}Performance\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Useful for production deployment.\par
+\par
+\b Microsoft Agent Framework vs Traditional Chatbots\par
+\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Feature\cell Traditional Chatbot\cell Microsoft Agent Framework\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1\b0 Remembers Context\cell Limited\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Uses Tools\cell Rarely\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Multi-Agent Support\cell No\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Workflow Engine\cell No\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Enterprise Integration\cell Basic\cell Extensive\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Human Approval\cell No\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Autonomous Actions\cell Limited\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2799\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5496\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx9018 
+\pard\intbl\widctlpar\li720\sa160\sl276\slmult1 Long Running Tasks\cell No\cell Yes\cell\row 
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b Real-World Use Cases\par
+Smart Spend Assurance Platform\par
+\b0 Relevant to your current project.\par
+Agents can:\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent360\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sa160\sl276\slmult1 Detect suspicious expenses\par
+{\pntext\f1 2.\tab}Check policy compliance\par
+{\pntext\f1 3.\tab}Analyse historical spending\par
+{\pntext\f1 4.\tab}Escalate approval requests\par
+{\pntext\f1 5.\tab}Generate audit reports\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\b Microsoft Foundry Agent Framework\par
+Introduction\par
+Microsoft Agent Framework (MAF)\b0  is Microsoft's next-generation framework for building \b Agentic AI applications\b0 . It is designed to help developers move beyond simple chatbots and create intelligent AI agents that can:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Reason about problems\par
+{\pntext\f7\'B7\tab}Plan multi-step tasks\par
+{\pntext\f7\'B7\tab}Use tools and APIs\par
+{\pntext\f7\'B7\tab}Access enterprise data\par
+{\pntext\f7\'B7\tab}Collaborate with other agents\par
+{\pntext\f7\'B7\tab}Maintain memory\par
+{\pntext\f7\'B7\tab}Execute workflows\par
+{\pntext\f7\'B7\tab}Operate safely in production environments\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 The framework is tightly integrated with \b Microsoft Foundry (Azure AI Foundry)\b0 , allowing organizations to build enterprise-grade AI agents using models such as \b GPT-5\b0 , \b GPT-4o\b0 , \b Claude\b0 , and other supported models.\par
+\par
+\b What is Azure AI Foundry?\par
+Azure AI Foundry\b0  is Microsoft's unified platform for:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Building AI applications\par
+{\pntext\f7\'B7\tab}Managing AI agents\par
+{\pntext\f7\'B7\tab}Model deployment\par
+{\pntext\f7\'B7\tab}RAG implementation\par
+{\pntext\f7\'B7\tab}Agent orchestration\par
+{\pntext\f7\'B7\tab}Evaluation and monitoring\par
+{\pntext\f7\'B7\tab}Enterprise governance\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1 Think of it as:\par
+Azure AI Foundry\par
+       \f3\u8595?\f1\lang16393\par
+Microsoft Agent Framework\par
+       \f3\u8595?\f1\lang16393\par
+AI Agents\par
+       \f3\u8595?\f1\lang16393\par
+Business Applications\par
+\par
+\b Why Microsoft Introduced Agent Framework?\par
+\b0\par
+Traditional AI systems:\par
+User\par
+\f3\u8595?\f1\lang16393\par
+Chatbot\par
+\f3\u8595?\f1\lang16393\par
+Response\par
+\par
+\b Limitations:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent0{\pntxtb\'B7}}\widctlpar\fi-360\li1440\sa160\sl276\slmult1\b0 No planning\par
+{\pntext\f7\'B7\tab}No memory\par
+{\pntext\f7\'B7\tab}Cannot use external tools\par
+{\pntext\f7\'B7\tab}Cannot execute tasks\par
+{\pntext\f7\'B7\tab}No collaboration\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Agent Framework introduces:\par
+\b0          User\par
+\~\f3\u8595?\f1\lang16393\par
+Agent\par
+\~\f3\u8595?\f1\lang16393\par
+Reasoning\par
+\~\f3\u8595?\f1\lang16393\par
+Planning\par
+\~\f3\u8595?\f1\lang16393\par
+Tool Usage\par
+\~\f3\u8595?\f1\lang16393\par
+Execution\par
+\~\f3\u8595?\f1\lang16393\par
+Learning\par
+\b Complete Architecture of Microsoft Agent Framework\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\qc User\par
+\f4\'84\'a0\b0\f1\par
+\b\f5\u9660?\f1\par
+AI Agent\par
+\f4\'84\'a0\f1\par
+\f4\'84\'a1\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a9\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a2\f1\par
+\f5\u9660?\f1\~\~\~\~\~\~\~\~\~\~\~\~\~ \f5\u9660?\f1\~\~\~\~\~\~\~\~\~\~\~\~\~ \f5\u9660?\f1\par
+Memory\~\~\~\~\~\~ Reasoning\~\~\~\~\~ Planning\par
+\f4\'84\'a0\f1\~\~\~\~\~\~\~\~\~\~\~\~\~ \f4\'84\'a0\f1\~\~\~\~\~\~\~\~\~\~\~\~\~ \f4\'84\'a0\f1\par
+\f4\'84\'a4\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a6\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a8\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a6\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'9f\'84\'a3\f1\par
+\f5\u9660?\f1\~\~\~\~\~\~\~\~\~\~\~\~\~\~ \f5\u9660?\f1\par
+Tools\~\~\~\~\~\~\~\~\~ Workflows\par
+\f4\'84\'a0\f1\~\~\~\~\~\~\~\~\~\~\~\~\~\~ \f4\'84\'a0\f1\par
+\f5\u9660?\f1\~\~\~\~\~\~\~\~\~\~\~\~\~\~ \f5\u9660?\f1\par
+Enterprise\~\~\~\~\~ Other Agents\par
+Systems\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1 Layer 1: Model Providers\par
+\b0 The framework supports multiple LLMs.\par
+Supported providers include:\par
+\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1\b Provider\cell Models\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1\b0 Azure OpenAI\cell GPT-4o, GPT-4.1, GPT-5\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 OpenAI\cell GPT Family\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Anthropic\cell Claude\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Ollama\cell Local Models\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2453\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5369 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Microsoft Foundry\cell Managed Models\cell\row 
+\pard\widctlpar\fi720\sa160\sl276\slmult1 The framework abstracts away model differences using a common interface.\par
+\par
+\b Layer 2: Agent Layer\par
+\b0 An Agent is an autonomous software system.\par
+Example:\par
+Plain Text\par
+User:\par
+Find anomalies in expense claims.\par
+Agent:\par
+
+\pard 
+{\pntext\f1 1.\tab}{\*\pn\pnlvlbody\pnf1\pnindent360\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sa160\sl276\slmult1 Understands request\par
+{\pntext\f1 2.\tab}Gets expense data\par
+{\pntext\f1 3.\tab}Runs analysis\par
+{\pntext\f1 4.\tab}Detects anomalies\par
+{\pntext\f1 5.\tab}Creates report\par
+{\pntext\f1 6.\tab}Sends notification\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1 Unlike a chatbot, the agent performs actions.\par
+\par
+\b Agent Lifecycle\par
+Step 1: Receive Goal\par
+\b0 Plain Text\par
+Analyse travel expenses.\par
+\par
+\b Step 2: Understand Intent\par
+\b0 Agent identifies:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Goal\par
+{\pntext\f7\'B7\tab}Context\par
+{\pntext\f7\'B7\tab}Constraints\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1 Example:\par
+Plain Text\par
+Analyse only FY2026 data\par
+\par
+\b Step 3: Plan\par
+\b0 Agent creates task plan.\par
+Plain Text\par
+Task 1 \f3\u8594?\f1\lang16393  Load Data\par
+Task 2 \f3\u8594?\f1\lang16393  Clean Data\par
+Task 3 \f3\u8594?\f1\lang16393  Detect Outliers\par
+Task 4 \f3\u8594?\f1\lang16393  Generate Report\par
+\par
+\b Step 4: Execute\par
+\b0 Calls:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Databases\par
+{\pntext\f7\'B7\tab}APIs\par
+{\pntext\f7\'B7\tab}MCP servers\par
+{\pntext\f7\'B7\tab}Enterprise systems\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Step 5: Evaluate\par
+\b0 Checks:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Correctness\par
+{\pntext\f7\'B7\tab}Completeness\par
+{\pntext\f7\'B7\tab}Safety\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Step 6: Return Results\par
+\b0 Produces:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Reports\par
+{\pntext\f7\'B7\tab}Dashboard data\par
+{\pntext\f7\'B7\tab}Recommendations\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Agent Capabilities\par
+1. Reasoning\par
+\b0 Reasoning allows agents to think through problems.\par
+Example:\par
+\b User Request\par
+\b0 Plain Text\par
+Reduce cloud spending by 15%.\par
+\b Reasoning:\par
+\b0 Plain Text\par
+Analyse current costs\par
+Identify expensive resources\par
+Recommend optimizations\par
+Calculate projected savings\par
+Reasoning transforms raw LLM responses into structured decision-making.\par
+\par
+\b 2. Planning\par
+\b0 Planning breaks large goals into manageable tasks.\par
+Example:\par
+Plain Text\par
+Create Quarterly Financial Summary\par
+Plan:\par
+Plain Text\par
+Collect Revenue Data\par
+Collect Expense Data\par
+Generate Charts\par
+Create Summary\par
+Send Email\par
+This is a fundamental Agent Framework capability.\par
+\par
+\b 3. Tool Calling\par
+\b0 Agents can invoke external tools.\par
+Examples:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 SQL Databases\par
+{\pntext\f7\'B7\tab}REST APIs\par
+{\pntext\f7\'B7\tab}Azure Functions\par
+{\pntext\f7\'B7\tab}Python scripts\par
+{\pntext\f7\'B7\tab}SharePoint\par
+{\pntext\f7\'B7\tab}Teams\par
+{\pntext\f7\'B7\tab}Outlook\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1 Example:\par
+Plain Text\par
+Agent \f3\u8594?\f1\lang16393  API\par
+Agent \f3\u8594?\f1\lang16393  Database\par
+Agent \f3\u8594?\f1\lang16393  Storage Account\par
+\par
+\b MCP (Model Context Protocol)\par
+\b0 One of the most important concepts.\par
+MCP is a standard protocol that allows AI agents to use tools and data sources.\par
+Think of MCP as:\par
+Plain Text\par
+USB-C for AI Agents\par
+Instead of creating separate connectors for every system:\par
+Plain Text\par
+Agent\par
+\f3\u8595?\f1\lang16393\par
+MCP\par
+\f3\u8595?\f1\lang16393\par
+Any Tool\par
+\b\par
+Benefits:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent0{\pntxtb\'B7}}\widctlpar\fi-360\li1440\sa160\sl276\slmult1\b0 Standardization\par
+{\pntext\f7\'B7\tab}Tool Reusability\par
+{\pntext\f7\'B7\tab}Easier Integration\par
+{\pntext\f7\'B7\tab}Multi-Agent Support\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Agent Memory\par
+Short-Term Memory\par
+\b0 Stores immediate conversation context.\par
+Example:\par
+Plain Text\par
+User:\par
+Create report for Kolkata branch.\par
+Agent remembers:\par
+Plain Text\par
+Branch = Kolkata\par
+through the session.\par
+\par
+\b Long-Term Memory\par
+\b0 Stores information over time.\par
+Example:\par
+Plain Text\par
+User prefers PDF reports.\par
+Future reports can automatically use PDF format.\par
+\par
+\b Semantic Memory\par
+\b0 Vector-based memory for similarity searches.\par
+Used in:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 RAG\par
+{\pntext\f7\'B7\tab}Knowledge search\par
+{\pntext\f7\'B7\tab}Document retrieval\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Workflows in Agent Framework\par
+Functional Workflow\par
+\b0 Sequential execution.\par
+Plain Text\par
+Start\par
+\f3\u8595?\f1\lang16393\par
+Fetch Data\par
+\f3\u8595?\f1\lang16393\par
+Process\par
+\f3\u8595?\f1\lang16393\par
+Create Report\par
+\f3\u8595?\f1\lang16393\par
+Send Email\par
+\par
+\b Graph Workflow\par
+\b0 Branching execution.\par
+Plain Text\par
+Start\par
+\f4\'84\'a0\f1\par
+Research\par
+/ \\\par
+/ \\\par
+Analysis Validation\par
+\\ /\par
+Report\par
+\par
+\b Multi-Agent Architecture\par
+\b0 A major feature of Agent Framework.\par
+Instead of one agent doing everything:\par
+Plain Text\par
+One Agent = Slow\par
+\b Use multiple specialized agents:\par
+\b0 Plain Text\par
+Planner Agent\par
+Research Agent\par
+Data Agent\par
+Validation Agent\par
+Reporting Agent\par
+\b Benefits:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Faster execution\par
+{\pntext\f7\'B7\tab}Better specialization\par
+{\pntext\f7\'B7\tab}Clear responsibility\par
+{\pntext\f7\'B7\tab}Scalability\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Agent Harness\par
+\b0 One unique capability is the \b Agent Harness\b0 .\par
+It supports:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Long-running tasks\par
+{\pntext\f7\'B7\tab}Planning\par
+{\pntext\f7\'B7\tab}Todo tracking\par
+{\pntext\f7\'B7\tab}Memory\par
+{\pntext\f7\'B7\tab}Checkpointing\par
+{\pntext\f7\'B7\tab}Tool orchestration\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Example:\par
+\b0 Plain Text\par
+Research competitors\par
+Analyse findings\par
+Create presentation\par
+Generate report\par
+This may take hours.\par
+Agent Harness manages the entire process.\par
+\par
+\b Human-in-the-Loop (HITL)\par
+\b0 Enterprise applications often require approvals.\par
+Example:\par
+Plain Text\par
+Refund > \u8377?1,00,000\par
+Workflow:\par
+Plain Text\par
+Agent\par
+\f3\u8595?\f1\lang16393\par
+Prepare Recommendation\par
+\f3\u8595?\f1\lang16393\par
+Manager Approval\par
+\f3\u8595?\f1\lang16393\par
+Execute Action\par
+The agent does not act autonomously on sensitive tasks.\par
+\par
+\b Security Features\par
+\b0 Microsoft includes:\par
+\b Identity Security\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Microsoft Entra ID\par
+{\pntext\f7\'B7\tab}Authentication\par
+{\pntext\f7\'B7\tab}Authorization\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Data Security\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Encryption\par
+{\pntext\f7\'B7\tab}Data boundaries\par
+{\pntext\f7\'B7\tab}Secure storage\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Responsible AI\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Content filtering\par
+{\pntext\f7\'B7\tab}Prompt protection\par
+{\pntext\f7\'B7\tab}Safety checks\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Governance\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1\b0 Monitoring\par
+{\pntext\f7\'B7\tab}Compliance\par
+{\pntext\f7\'B7\tab}Audit logs\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\b Monitoring and Observability\par
+\b0 Production AI systems require visibility.\par
+Agent Framework tracks:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Agent decisions\par
+{\pntext\f7\'B7\tab}Prompt usage\par
+{\pntext\f7\'B7\tab}Tool calls\par
+{\pntext\f7\'B7\tab}Failure events\par
+{\pntext\f7\'B7\tab}Costs\par
+{\pntext\f7\'B7\tab}Performance metrics\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1 This helps organizations operate agents safely.\par
+\par
+\b Real-World Example: Smart Spend Assurance Platform\par
+\b0 This aligns directly with the project you are building.\par
+\b User Request\par
+\b0 Plain Text\par
+Analyse employee expenses.\par
+\b Planner Agent\par
+\b0 Creates workflow.\par
+Plain Text\par
+Collect Expense Data\par
+Analyse Categories\par
+Detect Fraud\par
+Create Report\par
+\b Expense Agent\par
+\b0 Reads PostgreSQL data.\par
+Plain Text\par
+Travel\par
+Food\par
+Accommodation\par
+Transport\par
+\b Anomaly Agent\par
+\b0 Detects:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Duplicate claims\par
+{\pntext\f7\'B7\tab}Excess spending\par
+{\pntext\f7\'B7\tab}Suspicious vendors\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Compliance Agent\par
+\b0 Checks:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Company policy\par
+{\pntext\f7\'B7\tab}Budget limits\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Reporting Agent\par
+\b0 Creates:\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\widctlpar\fi-360\li720\sa160\sl276\slmult1 Dashboard\par
+{\pntext\f7\'B7\tab}PDF report\par
+{\pntext\f7\'B7\tab}Management summary\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\b Approval Agent\par
+\b0 Routes exceptions to managers.\par
+This is a textbook use case for Microsoft Agent Framework.\par
+\b Microsoft Agent Framework vs LangGraph\par
+\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clcbpat3\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Feature\cell MAF\cell LangGraph\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1\b0 Enterprise Support\cell Yes\cell Limited\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Azure Integration\cell  Native\cell External\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 MCP Support\cell  Native\cell Partial\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Human in Loop\cell Yes\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Monitoring\cell Yes Built-in\cell Custom\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Entra ID Security\cell Yes\cell No\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Multi-Agent\cell Yes\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Workflow Engine\cell Yes\cell Yes\cell\row\trowd\trgaph15\trleft8\trpaddl15\trpaddr15\trpaddfl3\trpaddfr3
+\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx2940\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx5553\clvertalc\clbrdrl\brdrw15\brdrs\brdrcf2\clbrdrt\brdrw15\brdrs\brdrcf2\clbrdrr\brdrw15\brdrs\brdrcf2\clbrdrb\brdrw15\brdrs\brdrcf2 \cellx8621 
+\pard\intbl\widctlpar\fi720\sa160\sl276\slmult1 Production Deployment\cell  Enterprise-grade\cell Requires additional setup\cell\row 
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\qc\b\par
+\b0\par
+
+\pard\widctlpar\fi720\sa160\sl276\slmult1\par
+
+\pard\widctlpar\li1440\sa160\sl276\slmult1\par
+
+\pard\widctlpar\li720\sa160\sl276\slmult1\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\par
+
+\pard\widctlpar\li720\sb100\sa100\sl300\slmult0\b0\par
+
+\pard\widctlpar\sa160\sl276\slmult1\kerning2\f0\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\kerning0\f6\lang9\par
+}
+ 
